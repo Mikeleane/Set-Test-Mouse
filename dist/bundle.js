@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("{console.log(\"✅ Custom H5P JS Loaded\");\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", () => {\r\n  function waitForH5P() {\r\n    if (typeof H5PStandalone !== \"undefined\") {\r\n      const container = document.getElementById(\"h5p-container\");\r\n      new H5PStandalone.H5P(container, \"h5p\");\r\n    } else {\r\n      setTimeout(waitForH5P, 100);\r\n    }\r\n  }\r\n\r\n  waitForH5P();\r\n});\r\n\n\n//# sourceURL=webpack://set-test-mouse/./src/index.js?\n}");
+eval("{console.log(\"✅ Custom H5P JS Rebuilt\");\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", () => {\r\n  function waitForH5P() {\r\n    if (typeof H5PStandalone !== \"undefined\") {\r\n      const container = document.getElementById(\"h5p-container\");\r\n      new H5PStandalone.H5P(container, \"h5p\");\r\n    } else {\r\n      setTimeout(waitForH5P, 100);\r\n    }\r\n  }\r\n\r\n  waitForH5P();\r\n});\r\n\n\n//# sourceURL=webpack://set-test-mouse/./src/index.js?\n}");
 
 /***/ })
 
