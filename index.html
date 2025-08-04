@@ -4,16 +4,20 @@
   <meta charset="UTF-8" />
   <title>My H5P Activity</title>
 
-  <!-- H5P core CSS -->
-  <link rel="stylesheet" href="h5p-standalone/h5p" />
+  <!-- jQuery (required by many H5P libraries) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- H5P core styles and libraries -->
+  <link rel="stylesheet" href="h5p-standalone/h5p.css" />
+  <script src="h5p-standalone/main.bundle.js"></script>
+
+  <!-- Your H5P content may also require FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
 </head>
 <body>
   <div id="h5p-container"></div>
 
-  <!-- H5P standalone bundle -->
-  <script src="h5p-standalone/main.bundle.js"></script>
-
-  <!-- Your custom bundle (calls H5P) -->
+  <!-- Your custom JS -->
   <script src="dist/bundle.js"></script>
 </body>
 </html>
