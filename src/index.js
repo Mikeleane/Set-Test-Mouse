@@ -1,4 +1,4 @@
-console.log("✅ Custom H5P JS Loaded");
+console.log("✅ Custom H5P JS Rebuilt");
 
 document.addEventListener("DOMContentLoaded", () => {
   function waitForH5P() {
