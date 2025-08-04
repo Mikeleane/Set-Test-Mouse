@@ -1,1 +1,25 @@
-console.log("✅ Custom H5P JS Rebuilt"),document.addEventListener("DOMContentLoaded",()=>{!function e(){if("undefined"!=typeof H5PStandalone){const e=document.getElementById("h5p-container");new H5PStandalone.H5P(e,"h5p")}else setTimeout(e,100)}()});
+console.log("✅ Custom H5P JS Loaded");
+
+document.addEventListener("DOMContentLoaded", () => {
+  function waitForH5P() {
+    const container = document.getElementById("h5p-container");
+
+    if (typeof H5PStandalone === "function") {
+      new H5PStandalone(container, "workspace");
+    } else if (
+      typeof H5PStandalone === "object" &&
+      typeof H5PStandalone.default === "function"
+    ) {
+      new H5PStandalone.default(container, "workspace");
+    } else if (
+      typeof H5PStandalone === "object" &&
+      typeof H5PStandalone.H5P === "function"
+    ) {
+      new H5PStandalone.H5P(container, "workspace");
+    } else {
+      setTimeout(waitForH5P, 100);
+    }
+  }
+
+  waitForH5P();
+});
