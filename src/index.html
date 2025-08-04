@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html>
+// src/index.js
 
-<head>
-  <title> H5P Standalone on GitHub Pages </title>
-  <link type="text/css" rel="stylesheet" media="all" href="./dist/styles/h5p.css" />
-  <meta charset="utf-8" />
-  <script type="text/javascript" src="./dist/main.bundle.js"></script>
-</head>
+console.log("✅ Custom H5P JS Loaded");
 
-<body>
-  <div id="h5p-container"></div>
-  <script type="text/javascript">
-    const {
-      H5P
-    } = H5PStandalone;
-    new H5P(document.getElementById('h5p-container'), {
-      h5pJsonPath: 'h5p-folder',
-      frameJs: './dist/frame.bundle.js',
-      frameCss: './dist/styles/h5p.css'
-    });
-  </script>
-</body>
-
-</html>
+document.addEventListener("DOMContentLoaded", () => {
+  const message = document.createElement("div");
+  message.textContent = "Hello from bundle.js!";
+  message.style.cssText = "position:fixed;top:10px;left:10px;background:#eef;padding:10px;border:1px solid #ccc;";
+  document.body.appendChild(message);
+});
