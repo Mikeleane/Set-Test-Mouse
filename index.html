@@ -10,16 +10,11 @@
 <body>
   <div id="h5p-container"></div>
 
-  <!-- ✅ Load H5P script first -->
+  <!-- ✅ H5P Standalone library (from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/h5p-standalone@1.3.4/dist/main.bundle.js"></script>
 
-  <!-- ✅ THEN load your script that uses H5PStandalone -->
-  <script>
-    const h5pContainer = document.getElementById('h5p-container');
-    new H5PStandalone.H5P(h5pContainer, 'h5p');
-  </script>
-
-  <!-- ✅ Finally, load your Webpack bundle -->
+  <!-- ✅ Your Webpack bundle (waits for H5PStandalone) -->
   <script src="dist/bundle.js"></script>
 </body>
+
 </html>
