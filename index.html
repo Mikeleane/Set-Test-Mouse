@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Set Test Mouse</title>
-<div id="h5p-container" style="width: 100%; height: 600px;"></div>
-<link rel="icon" type="image/png" href="favicon" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <!-- jQuery (required by many H5P libraries) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -14,21 +14,22 @@
   <script src="h5p-standalone/main.bundle.js"></script>
   <script src="h5p-standalone/frame.bundle.js"></script>
 
-  <!-- FontAwesome (optional but common for H5P content) -->
+  <!-- FontAwesome (optional but common for H5P) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <style>
-  #h5p-container {
-    width: 100%;
-    max-width: 960px;
-    height: 600px;
-    margin: 2rem auto;
-    border: 1px solid #ccc; /* Optional: visible frame for debugging */
-  }
-</style>
 
+  <style>
+    #h5p-container {
+      width: 100%;
+      max-width: 960px;
+      height: 600px;
+      margin: 2rem auto;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- ✅ Only place the container here -->
   <div id="h5p-container"></div>
 
   <!-- Your custom H5P loader -->
