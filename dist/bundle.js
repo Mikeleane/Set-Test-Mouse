@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("{console.log(\"✅ Custom H5P JS Loaded\");\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", () => {\r\n  function waitForH5P() {\r\n    if (typeof H5PStandalone !== 'undefined') {\r\n      const container = document.getElementById(\"h5p-container\");\r\n      new H5PStandalone.H5P(container, \"h5p\");\r\n    } else {\r\n      setTimeout(waitForH5P, 100);\r\n    }\r\n  }\r\n\r\n  waitForH5P();\r\n\r\n  const msg = document.createElement(\"div\");\r\n  msg.textContent = \"Hello from bundle.js!\";\r\n  msg.style.cssText = \"position:fixed;top:10px;left:10px;background:#eef;padding:10px;border:1px solid #ccc;\";\r\n  document.body.appendChild(msg);\r\n});\r\n\n\n//# sourceURL=webpack://set-test-mouse/./src/index.js?\n}");
+eval("{console.log(\"✅ Custom H5P JS Loaded\");\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", () => {\r\n  function waitForH5P() {\r\n    if (typeof H5PStandalone !== \"undefined\") {\r\n      const container = document.getElementById(\"h5p-container\");\r\n      new H5PStandalone.H5P(container, \"h5p\");\r\n    } else {\r\n      setTimeout(waitForH5P, 100);\r\n    }\r\n  }\r\n\r\n  waitForH5P();\r\n});\r\n\n\n//# sourceURL=webpack://set-test-mouse/./src/index.js?\n}");
 
 /***/ })
 
