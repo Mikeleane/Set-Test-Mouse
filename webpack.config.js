@@ -7,5 +7,6 @@ module.exports = {
     filename: 'bundle.js', // This is the compiled file name
     path: path.resolve(__dirname, 'dist') // This is where the file goes
   },
-  mode: 'development', // Change to 'production' for optimized builds
+  mode: "production"
+, // Change to 'production' for optimized builds
 };
